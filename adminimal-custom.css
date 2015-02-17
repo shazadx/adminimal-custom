@@ -1,0 +1,49 @@
+.form-inline-field .form-wrapper {
+  margin-bottom: 0;
+}
+#media-browser-tabset ul.tabs.primary li a:link {
+  padding: 15px 20px;
+}
+#page {
+  padding: 10px 20px;
+}
+#navigation ul.primary li:first-of-type {
+  margin-left: 20px;
+}
+.tabs-secondary {
+  padding: 10px 20px;
+}
+ul.secondary li a {
+  border-bottom: 1px solid #BBB;
+}
+body.adminimal-theme ul.secondary li.active a,
+ul.secondary li.active a.active {
+  border-bottom: 2px solid #777;
+}
+body.adminimal-menu {
+  margin-top: 29px !important;
+}
+#branding div.breadcrumb {
+  float: right;
+  padding: 15px 0 0;
+  color: transparent;
+  font-size: 1px;
+}
+#branding div.breadcrumb a {
+  font-size: 14px;
+}
+#branding div.breadcrumb a:first-child {
+  color: red;
+  background: url("/sites/all/modules/contrib/adminimal_admin_menu/images/home.png") no-repeat scroll 0 2px transparent;
+  display: inline-block;
+  margin: 5px 0 0;
+  padding: 0;
+  width: 13px;
+  text-indent: -9999px;
+}
+#branding div.breadcrumb a:before {
+  content: "/";
+  display: inline-block;
+  width: 14px;
+  text-align: center;
+}
