@@ -20,9 +20,45 @@ body.adminimal-theme ul.secondary li.active a,
 ul.secondary li.active a.active {
   border-bottom: 2px solid #777;
 }
+
 body.adminimal-menu {
   margin-top: 29px !important;
 }
+
+body.page-admin-appearance fieldset {
+  padding: 0 12px 10px !important;
+}
+body.page-admin-appearance fieldset legend {
+  padding: 0 3px 15px !important;
+}
+
+fieldset {
+  padding: 2px 12px 10px;
+}
+fieldset legend {
+  padding: 0 3px 10px;
+}
+
+div.vertical-tabs .field-group-tab fieldset {
+  margin: 0 0 18px;
+  padding: 2px 12px 10px;
+}
+div.vertical-tabs fieldset.vertical-tabs-pane {
+  border: 0;
+  padding: 5px 0 0;
+}
+div.vertical-tabs fieldset.vertical-tabs-pane > legend:first-child {
+  display: none !important;
+}
+
+form .form-item .field-multiple-table th.field-label label {
+  margin: 0;
+}
+form .form-item .field-multiple-table tbody tr {
+  border-bottom: 1px solid #CCC;
+}
+
+
 #branding div.breadcrumb {
   float: right;
   padding: 15px 0 0;
