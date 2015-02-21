@@ -5,7 +5,7 @@
   padding: 15px 20px;
 }
 #page {
-  padding: 10px 20px;
+  padding: 5px 20px 20px;
 }
 #navigation ul.primary li:first-of-type {
   margin-left: 20px;
@@ -29,15 +29,19 @@ body.page-admin-appearance fieldset {
   padding: 0 12px 10px !important;
 }
 body.page-admin-appearance fieldset legend {
-  padding: 0 3px 15px !important;
+  padding: 0 4px 15px !important;
 }
 
 fieldset {
   padding: 2px 12px 10px;
 }
 fieldset legend {
-  padding: 0 3px 10px;
+  padding: 0 4px 10px;
 }
+fieldset.fieldset-no-legend {
+  padding-top: 12px;
+}
+
 
 div.vertical-tabs .field-group-tab fieldset {
   margin: 0 0 18px;
@@ -58,6 +62,41 @@ form .form-item .field-multiple-table tbody tr {
   border-bottom: 1px solid #CCC;
 }
 
+table caption {
+  border-top: 1px solid #E1E2DC;
+}
+
+table.update tr td {
+  border-color: #BEB;
+  border-top-color: #CFC;
+}
+
+table.update tr td:hover {
+  background-color: #BEB;
+}
+
+table.system-status-report tr {
+  border-color: #C3EDD0;
+}
+table.system-status-report tr.info {
+  border-color: #ACE;
+}
+
+
+html.js fieldset.collapsed .fieldset-legend {
+  padding-left: 19px;
+}
+html.js fieldset.collapsible .fieldset-legend {
+  padding-left: 20px;
+}
+html.js fieldset.collapsible .fieldset-wrapper .fieldset-legend {
+  background-position: -1000px 0;
+  padding-left: 0;
+}
+html.js fieldset.collapsible .fieldset-wrapper fieldset.collapsible .fieldset-legend {
+  background-position: 5px 65%;
+  padding-left: 20px;
+}
 
 #branding div.breadcrumb {
   float: right;
@@ -82,4 +121,61 @@ form .form-item .field-multiple-table tbody tr {
   display: inline-block;
   width: 14px;
   text-align: center;
+}
+
+a.token-dialog {
+  display: inline-block;
+  padding: 6px 10px;
+  background-color: #0074BD;
+  color: #FFF;
+  margin-bottom: 10px;
+}
+
+body div.error {
+  background-color: #F9D9D9;
+  color: #C52424;
+  border-top: 1px solid #F99494;
+  border-bottom: 0;
+}
+body div.warning {
+  background-color: #FFEAB5;
+  color: #Cf5401;
+  border-top: 1px solid #DfBA95;
+  border-bottom: 0;
+}
+body div.status {
+  background-color: #C3F8A5;
+  color: #317613;
+  border-top: 1px solid #93C875;
+  border-bottom: 0;
+}
+
+
+#help {
+  margin-top: .5em;
+}
+#help .content {
+  padding: 10px;
+  margin-bottom: 20px;
+  background-color: #EFEFEF;
+  border-bottom: 1px solid #CCC;
+}
+#help fieldset legend {
+  background-color: #EFEFEF;
+}
+#help p {
+  margin: 0;
+  padding: 5px 0;
+}
+
+
+tr.themekey-top-level td {
+  padding-top: 1em;
+}
+#themekey-properties tr.themekey-top-level {
+  border-top-width: 3px;
+}
+
+#menu-block-settings {
+  margin: 0 0 20px;
 }
