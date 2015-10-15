@@ -185,3 +185,27 @@ ul.action-links a {
   margin: 0 auto;
   border-radius: 0;
 }
+
+#views-ui-list-page table td {
+  vertical-align: top;
+}
+th.views-ui-name {
+  width: 35%;
+}
+th.views-ui-operations {
+  width: 15%;
+}
+
+.views-ui-view-displays,
+.views-ui-view-storage,
+.views-ui-view-base {
+  display: inline-block;
+  font-size: .9em;
+  padding: 2px 5px;
+  border-left: 1px solid #DDD;
+}
+.views-ui-view-displays em,
+.views-ui-view-storage em,
+.views-ui-view-base em {
+  color: #39C;
+}
