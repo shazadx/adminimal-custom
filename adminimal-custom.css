@@ -66,14 +66,6 @@ table caption {
   border-top: 1px solid #E1E2DC;
 }
 
-table.update tr td {
-  border-color: #BEB;
-  border-top-color: #CFC;
-}
-
-table.update tr td:hover {
-  background-color: #BEB;
-}
 
 table.system-status-report tr {
   border-color: #C3EDD0;
@@ -155,17 +147,16 @@ body div.status {
   margin-top: .5em;
 }
 #help .content {
-  padding: 10px;
+  padding: 5px 0 10px;
   margin-bottom: 20px;
-  background-color: #EFEFEF;
-  border-bottom: 1px solid #CCC;
+  border-bottom: 1px dotted #CCC;
 }
 #help fieldset legend {
   background-color: #EFEFEF;
 }
 #help p {
   margin: 0;
-  padding: 5px 0;
+  padding: 5px;
 }
 
 
@@ -178,4 +169,19 @@ tr.themekey-top-level td {
 
 #menu-block-settings {
   margin: 0 0 20px;
+}
+
+#permissions td.module {
+  border-bottom: 2px solid #C1C2BC;
+}
+
+ul.action-links {
+  margin: 0 0 10px 0;
+}
+
+ul.action-links a {
+  border: 0;
+  border-bottom: 2px solid #0074BD;
+  margin: 0 auto;
+  border-radius: 0;
 }
