@@ -39,7 +39,10 @@ function xx_media_alter_media_wysiwyg_token_to_markup_alter(&$element, $tag_info
   //dpm($tag_info);
   //dpm($settings);
   $element['content']['#attributes']['class'] = array("file-image");
-  if (isset($settings['fields']['field_file_image_position']['und'][0]['value']) && $settings['fields']['field_file_image_position']['und'][0]['value'] != 'none' ) {
+  if (isset($settings['fields']['field_file_image_position']['und'][0]['value']) && $settings['fields']['field_file_image_position']['und'][0]['value'] != 'none') {
     $element['content']['#attributes']['class'][] = 'image-' . $settings['fields']['field_file_image_position']['und'][0]['value'];
+  }
+  if (isset($settings['fields']['field_file_image_caption']['und'][0]['value'])) {
+    $element['content']['#attributes']['class'][] = 'with-caption';
   }
 }
