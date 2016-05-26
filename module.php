@@ -33,3 +33,13 @@ function _r_ui_evaluate_path($path_check = array()) {
   }
   return $page_match;
 }
+
+function xx_media_alter_media_wysiwyg_token_to_markup_alter(&$element, $tag_info, $settings) {
+  //dpm($element);
+  //dpm($tag_info);
+  //dpm($settings);
+  $element['content']['#attributes']['class'] = array("file-image");
+  if (isset($settings['fields']['field_file_image_position']['und'][0]['value']) && $settings['fields']['field_file_image_position']['und'][0]['value'] != 'none' ) {
+    $element['content']['#attributes']['class'][] = 'image-' . $settings['fields']['field_file_image_position']['und'][0]['value'];
+  }
+}
